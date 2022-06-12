@@ -1,6 +1,5 @@
 # InterviewQuestions
-The questions I have faced on the interview sessions. 
-
+Feel free to add questions on each sections  or you can add another sections like Java, Javascript , go etc. Just send me a pull request. Please read questions carefully before sending pull request. We do not add repeated questions
 
 
 # Python
@@ -8,7 +7,7 @@ The questions I have faced on the interview sessions.
 2. What are the mutable and immutable datastructure in python 
 3. Tell me about generator function. 
 4. How generator function works 
-5. How lumbda function works 
+5. How lumbda function works ?
 6. Can you please explian lumbda function 
 7. Is there any restriction on input variable of Lumbda function ? 
 8. Tell me about list comprehension with an example 
@@ -30,12 +29,28 @@ The questions I have faced on the interview sessions.
 
 14. Expain Stack queue. 
 15. Expain map on python. (filter and reduce)
-16. Is python string are immutable ? Expalin with an example 
-
+16. Is python string are immutable ? Expalin with an example
+17. Imagine that you have a lumbda function which take a variable and squire it? If I provide you a list of numners how can your squire them?  
+Solutions: <br>
+    Way 1: 
+    ```python
+    data = lambda x: x ** 2
+    numbers = [1, 2, 3, 4]
+    output = []
+    for number in numbers:
+        output.append(data(number))
+    print(output)
+    ```
+    Best Way: 
+    ```python 
+    numbers = [1, 2, 3, 4]
+    result = map(lambda x: x ** 2, numbers)
+    print(list(result))
+    ```
 
 # Django 
 1. Explain Django middlewire 
-2. Have you written any custom middlewire by yourself 
+2. Have you written any custom middlewire by yourself? If yes then please explain me how ?
 3. Hove you ever use decorator function 
 4. Write a code for decorator as caching 
 5. Is django support multilayer docorator? If support then tell me which order are they works 
@@ -47,6 +62,7 @@ The questions I have faced on the interview sessions.
 11. Pickling QuerySets
 12. If the request data is not available which status code will invioked ? <br>
 404
+13. Write the bast practice of writing django URLs. 
  
 
 
