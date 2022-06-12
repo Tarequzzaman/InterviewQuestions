@@ -42,9 +42,22 @@ The questions I have faced on the interview sessions.
 6. Django request lifecycle 
 7. How django get data from database? or Explan how orm works 
 8. How django solve n+1 complex query 
+9. What is the difference between select related and prefetch related 
+10. Tell me the difference between get and filter method 
+11. Pickling QuerySets
+12. If the request data is not available which status code will invioked ? <br>
+404
+ 
+
 
 
 # Django rest Framework
 1. What is the perpose of serialization ? 
 2. What is the benifit of using DRF? 
 3. What problem solve by DRF? 
+4. Write a class based view for crud operaton 
+5. what need to import while creating a class based view? <br>
+   Answer: APIView
+
+   
+
