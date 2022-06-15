@@ -57,8 +57,24 @@ Solutions: <br>
 6. Django request lifecycle 
 7. How django get data from database? or Explan how orm works 
 8. How django solve n+1 complex query 
+   <br> Answer: You can find the answer [here](https://scoutapm.com/blog/django-and-the-n1-queries-problem#:~:text=Tools%20to%20Fix%20the%20N,model%20alongside%20the%20original%20query.)
 9. What is the difference between select related and prefetch related 
-10. Tell me the difference between get and filter method 
+<br> Answer: you can find a solid answer [here](https://stackoverflow.com/questions/31237042/whats-the-difference-between-select-related-and-prefetch-related-in-django-orm)
+
+10. Tell me the difference between get and filter method <br>
+
+    `filter()` will always give you a `QuerySet`, even if only a single object matches the query - in this case, it will be a QuerySet containing a single element.
+
+    If you know there is only one object that matches your query, you can use the `get()` method on a Manager which returns the object directly:
+    ```python
+     one_entry = Entry.objects.get(pk=1)
+    ```
+    You can use any query expression with get(), just like with filter() - again, see Field lookups below.
+
+    <i>Note that there is a difference between using get(), and using filter() with a slice of [0]. If there are no results that match the query, get() will raise a DoesNotExist exception. This exception is an attribute of the model class that the query is being performed on - so in the code above, if there is no Entry object with a primary key of 1, Django will raise Entry.DoesNotExist.</i>
+
+
+
 11. Pickling QuerySets
 12. If the request data is not available which status code will invioked ? <br>
 404
@@ -76,4 +92,9 @@ Solutions: <br>
    Answer: APIView
 
    
+
+# Software Design & TDD
+- Do you have ever implmented your code with SOLID principle? if YES then Explain solid principle
+- How unit test is related to SOLID principle 
+- What are the befinfits of Unit test
 
