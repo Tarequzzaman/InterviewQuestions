@@ -76,9 +76,7 @@ Solutions: <br>
 
 
 11. Pickling QuerySets
-12. If the request data is not available which status code will invioked ? <br>
-404
-13. Write the bast practice of writing django URLs. 
+12. Write the bast practice of writing django URLs. 
  
 
 
@@ -91,10 +89,32 @@ Solutions: <br>
 5. what need to import while creating a class based view? <br>
    Answer: APIView
 
-   
+# REST API
+- Explain REST API Design Principles<br>
+  Answer: You can find it [here](https://www.astera.com/type/blog/rest-api-definition/)
+    
+- Tell me the different HTTP status code of REST API  
 
-# Software Design & TDD
+   Answer: You can find it [here](https://restfulapi.net/http-status-codes/)
+- If the request data is not available which status code will invioked ? <br>
+Status code: 404
+
+# System Design & TDD
 - Do you have ever implmented your code with SOLID principle? if YES then Explain solid principle
 - How unit test is related to SOLID principle 
 - What are the befinfits of Unit test
+- What step should follow when designing a system 
+- Which two key item you taking care when writing any kinda code.
+- Design a system which can upload content 
+    requirements: 
+          - System launched in 3 countries (Canada, Singapore , Australia)
+        
+- Design a system for parking mantainance. Mention that what step you follow and describe each step 
+
+
+# Data Structure
+- What are the disadvantages of Hashing Algorithm 
+
+
+
 
